@@ -13,10 +13,10 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        getIntent().setData(Uri.parse("content://sak.provider.mycontentprovider"));
+        getIntent().setData(Uri.parse("content://sak.provider.mycontent/mycontent"));
 
         ContentValues values = new ContentValues();
-        values.put("name", "Pen");
+        values.put("title", "Title");
         values.put("description", "This is a pen");
         getContentResolver().insert(getIntent().getData(), values);
 
