@@ -22,16 +22,20 @@ public class MyContentProvider extends ContentProvider {
 	protected static final int DATABASE_VERSION = 1;
     protected static final String TABLE_NAME = "mycontent";
     protected static final String AUTHORITY = "sak.provider.mycontent";
+    protected static final String LIVEFOLDER_NAME = "live_folders";		// For LIVE_FOLDER
     
     protected static final int ITEMS = 1;
     protected static final int ITEM_ID = 2;
+    protected static final int LIVEFOLDER_ITEMS = 3;					// For LIVE_FOLDER
     
     protected static UriMatcher sUriMatcher;
     protected static HashMap<String, String> sProjectionMap;
+    protected static HashMap<String, String> sLiveFolderProjectionMap;	// For LIVE_FOLDER
     
     
     public abstract static class MyColumns implements BaseColumns {
         public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/" + TABLE_NAME);
+        public static final Uri LF_CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/" + LIVEFOLDER_NAME + "/" + TABLE_NAME);	// For LIVE_FOLDER
         public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd." + AUTHORITY;
         public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd." + AUTHORITY;
 
@@ -96,6 +100,10 @@ public class MyContentProvider extends ContentProvider {
             qb.setProjectionMap(sProjectionMap);
             qb.appendWhere(BaseColumns._ID + "=" + uri.getPathSegments().get(1));
             break;
+        case LIVEFOLDER_ITEMS:									// For LIVE_FOLDER
+            qb.setTables(TABLE_NAME);							// For LIVE_FOLDER
+            qb.setProjectionMap(sLiveFolderProjectionMap);		// For LIVE_FOLDER
+            break;												// For LIVE_FOLDER
         default:
             throw new IllegalArgumentException("Unknown URI " + uri);
         }
@@ -174,10 +182,15 @@ public class MyContentProvider extends ContentProvider {
         sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
         sUriMatcher.addURI(AUTHORITY, TABLE_NAME, ITEMS);
         sUriMatcher.addURI(AUTHORITY, TABLE_NAME + "/#", ITEM_ID);
+        sUriMatcher.addURI(AUTHORITY, LIVEFOLDER_NAME + "/" + TABLE_NAME, LIVEFOLDER_ITEMS);	// For LIVE_FOLDER
 
         sProjectionMap = new HashMap<String, String>();
         sProjectionMap.put(BaseColumns._ID, BaseColumns._ID);
         sProjectionMap.put(MyColumns.TITLE, MyColumns.TITLE);
         sProjectionMap.put(MyColumns.DESCRIPTION, MyColumns.DESCRIPTION);
+        
+        sLiveFolderProjectionMap = new HashMap<String, String>();			// For LIVE_FOLDER
+        sLiveFolderProjectionMap.put(BaseColumns._ID, BaseColumns._ID);		// For LIVE_FOLDER
+        sLiveFolderProjectionMap.put(MyColumns.TITLE, "title as name");		// For LIVE_FOLDER
     }
 }
