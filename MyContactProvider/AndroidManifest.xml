@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="sak.mycontactprovider"
+      android:versionCode="3"
+      android:versionName="1.2">
+      <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:name=".Contacts"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- LIVE FOLDERS -->
+        <activity
+            android:name=".ContactsLiveFolders$AllContacts"
+            android:label="@string/liveFolderAll"
+            android:icon="@drawable/icon">
+
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContactsLiveFolders$FavoriteContacts"
+            android:label="@string/liveFolderFavorites"
+            android:icon="@drawable/icon">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+		<provider 
+			android:authorities="sak.provider.mycontact"
+			android:multiprocess="true"
+            android:name="ContactsProvider" />
+        
+    </application>
+</manifest> 
