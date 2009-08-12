@@ -63,7 +63,7 @@ public class ContactsProvider extends ContentProvider {
     private static MatrixCursor ERROR = new MatrixCursor(CURSOR_ERROR_COLUMNS);
     
     static {
-      ERROR.addRow(ERROR_MESSAGE);
+    	ERROR.addRow(ERROR_MESSAGE);
     }
 
     private static final String[] CONTACTS_COLUMN = new String[]{
