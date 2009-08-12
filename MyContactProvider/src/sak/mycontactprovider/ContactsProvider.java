@@ -35,7 +35,7 @@ public class ContactsProvider extends ContentProvider {
 
     @Override
     public int bulkInsert(Uri arg0, ContentValues[] values) {
-      return 0; //nothing to insert
+    	return 0; //nothing to insert
     }
     
     private static final String[] CURSOR_COLUMNS = new String[] {
@@ -48,13 +48,17 @@ public class ContactsProvider extends ContentProvider {
     };
     	
     private static final String[] CURSOR_ERROR_COLUMNS = new String[] {
-    	BaseColumns._ID, 
-    	LiveFolders.NAME, 
-    	LiveFolders.DESCRIPTION
+    	BaseColumns._ID, 					// 0
+    	LiveFolders.NAME, 					// 1
+    	LiveFolders.DESCRIPTION				// 2
     };
     
     private static final Object[] ERROR_MESSAGE = 
-    	new Object[] { -1, "No contacts found", "Check your contacts database" };
+    	new Object[] { 
+    		-1,								// 0 
+    		"No contacts found", 			// 1
+    		"Check your contacts database" 	// 2
+    	};
 
     private static MatrixCursor ERROR = new MatrixCursor(CURSOR_ERROR_COLUMNS);
     
