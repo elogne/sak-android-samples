@@ -41,6 +41,7 @@ public class MyContentProvider extends ContentProvider {
 
         public static final String TITLE = "title";
         public static final String DESCRIPTION = "description";
+//        public static final String ICON = "icon";
     }
     
     
@@ -192,5 +193,7 @@ public class MyContentProvider extends ContentProvider {
         sLiveFolderProjectionMap = new HashMap<String, String>();			// For LIVE_FOLDER
         sLiveFolderProjectionMap.put(BaseColumns._ID, BaseColumns._ID);		// For LIVE_FOLDER
         sLiveFolderProjectionMap.put(MyColumns.TITLE, "title as name");		// For LIVE_FOLDER
+        sLiveFolderProjectionMap.put(MyColumns.DESCRIPTION, "description as description");		// For LIVE_FOLDER
+//        sLiveFolderProjectionMap.put(MyColumns.ICON, "icon as icon");		// For LIVE_FOLDER
     }
 }
