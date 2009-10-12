@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<Button 
+	android:text="Button01" 
+	android:id="@+id/Button01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	/>
+	
+<sak.widgethostsample.CellLayout
+    xmlns:sample="http://schemas.android.com/apk/res/sak.widgethostsample"
+     
+	android:id="@+id/Cell01" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     
+    sample:cellWidth="106dip"
+    sample:cellHeight="73dip"
+    sample:longAxisStartPadding="0dip"
+    sample:longAxisEndPadding="55dip"
+    sample:shortAxisStartPadding="0dip"
+    sample:shortAxisEndPadding="0dip"
+    sample:shortAxisCells="4"
+    sample:longAxisCells="4" />
+
+<LinearLayout 
+	android:id="@+id/LinearLayout01" 
+    android:orientation="vertical"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"/>
+	
+</LinearLayout>
