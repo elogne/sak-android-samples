@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+    
+<sak.multitextview.MultiTextView
+	android:id="@+id/multiText1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    mainText="1234"
+    subText="+156" />
+
+<sak.multitextview.MultiTextView
+	android:id="@+id/multiText2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    mainText="234"
+    subText="+56" />
+
+<sak.multitextview.MultiTextView
+	android:id="@+id/multiText3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    mainText="98765"
+    subText="+4321" />
+
+<sak.multitextview.MultiTextView
+	android:id="@+id/multiText5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    mainText="98765"
+    subText="+4321" />
+
+</LinearLayout>
