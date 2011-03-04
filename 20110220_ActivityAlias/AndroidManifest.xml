@@ -18,17 +18,17 @@
         <activity android:name=".Activity1" />
         <activity android:name=".Activity2" />
         <activity android:name=".Activity3" />
-        
+
         <!-- タブ3を開くエントリポイント -->
-        <activity-alias 
-            android:name=".Activity3Alias" 
-            android:targetActivity="Main" 
+        <activity-alias
+            android:name=".Activity3Alias"
+            android:targetActivity="Main"
             android:label="activity-alias（裏口）">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity-alias>
-        
+
     </application>
 </manifest>

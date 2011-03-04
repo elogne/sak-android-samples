@@ -14,11 +14,11 @@ public class Activity2 extends Activity {
 	private static final int TEXT_SIZE = 64;
 	private static final int TEXT_COLOR = Color.argb(0xff, 0xff, 0xff, 0xff);	// 白
 	private static final int BACK_COLOR = Color.argb(0xff, 0x00, 0xff, 0x00);	// 緑
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+
 		TextView tv = new TextView(this);
 		tv.setLayoutParams(new LayoutParams(
 				LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));

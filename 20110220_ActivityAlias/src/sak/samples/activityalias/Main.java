@@ -14,9 +14,9 @@ public class Main extends TabActivity {
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
         final TabHost tabHost = getTabHost();
-        
+
         tabHost.addTab(tabHost.newTabSpec(TAB_1)
                 .setIndicator("タブ 1")
                 .setContent(new Intent(this, Activity1.class)));
@@ -28,7 +28,7 @@ public class Main extends TabActivity {
         tabHost.addTab(tabHost.newTabSpec(TAB_3)
                 .setIndicator("タブ 3")
                 .setContent(new Intent(this, Activity3.class)));
-        
+
         String componentName = getIntent().getComponent().getClassName();
         if (TAB_1.equals(componentName)) {
             tabHost.setCurrentTabByTag(TAB_1);
