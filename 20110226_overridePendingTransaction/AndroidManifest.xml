@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="sak.samples.overridependingtransaction"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application android:icon="@drawable/icon" android:label="_sak/2011-02-26 overridePendingTransaction">
+        <activity android:name="Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="android.intent.category.SAK_SAMPLES" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity1" />
+        <activity android:name=".Activity2" />
+        <activity android:name=".Activity3" />
+
+    </application>
+</manifest>
