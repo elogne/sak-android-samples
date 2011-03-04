@@ -7,11 +7,11 @@ import android.widget.TabHost;
 
 public class Main extends TabActivity {
 
-	private static final String TAB_1 = "sak.samples.activityalias.Activity1Alias";
-	private static final String TAB_2 = "sak.samples.activityalias.Activity2Alias";
-	private static final String TAB_3 = "sak.samples.activityalias.Activity3Alias";
+    private static final String TAB_1 = "sak.samples.activityalias.Activity1Alias";
+    private static final String TAB_2 = "sak.samples.activityalias.Activity2Alias";
+    private static final String TAB_3 = "sak.samples.activityalias.Activity3Alias";
 
-	@Override
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
