@@ -56,11 +56,11 @@ public class Main extends TabActivity {
             View v = inflater.inflate(R.layout.tabwidget, null);
 
             // アイコン
-            ImageView iv = (ImageView) v.findViewById(R.id.imageview);
+            ImageView iv = (ImageView) v.findViewById(R.id.icon);
             iv.setImageResource(icon);
 
             // テキスト
-            TextView tv = (TextView) v.findViewById(R.id.textview);
+            TextView tv = (TextView) v.findViewById(R.id.text);
             tv.setText(title);
 
             addView(v);
