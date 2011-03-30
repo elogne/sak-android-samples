@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 無効時 -->
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/toggle_disabled"
+        />
+    <!-- 選択時 -->
+    <item
+        android:state_checked="false"
+        android:drawable="@drawable/toggle_off"
+        />
+    <!-- 非選択時 -->
+    <item
+        android:state_checked="true"
+        android:drawable="@drawable/toggle_on"
+        />
+</selector>
