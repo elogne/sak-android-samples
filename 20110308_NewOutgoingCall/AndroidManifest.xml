@@ -3,7 +3,7 @@
       package="sak.samples.newoutgoingcall"
       android:versionCode="1"
       android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="7" />
+    <uses-sdk android:minSdkVersion="4" />
 
     <application android:icon="@drawable/icon" android:label="_sak/2011-03-08 NewOutgoingCall">
         <activity android:name=".Main">
