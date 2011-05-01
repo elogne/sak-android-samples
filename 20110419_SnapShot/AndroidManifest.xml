@@ -3,9 +3,9 @@
       package="sak.samples.snapshot"
       android:versionCode="1"
       android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="7" />
+    <uses-sdk android:minSdkVersion="4" />
 
-    <application android:icon="@drawable/icon" android:label="_sak/2011-03-30 SnapShot">
+    <application android:icon="@drawable/icon" android:label="_sak/2011-04-19 SnapShot">
         <activity android:name=".Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
