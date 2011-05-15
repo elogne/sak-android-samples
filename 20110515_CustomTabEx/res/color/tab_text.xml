@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 通常時 -->
+    <item android:state_window_focused="false" android:state_enabled="true"
+        android:color="#ffff" />
+    <!-- 無効時 -->
+    <item android:state_window_focused="false" android:state_enabled="false"
+        android:color="#f000" />
+    <!-- 押下時 -->
+    <item android:state_pressed="true"
+        android:color="#ff00" />
+    <!-- フォーカス時 -->
+    <item android:state_focused="true" android:state_enabled="true"
+        android:color="#f0f0" />
+    <!-- 通常時 -->
+    <item android:state_enabled="true"
+        android:color="#ffff" />
+    <!-- 無効でフォーカス時 -->
+    <item android:state_focused="true"
+        android:color="#f00f" />
+    <!-- 無効時 -->
+    <item
+        android:color="#f000" />
+  </selector>
+
