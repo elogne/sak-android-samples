@@ -24,10 +24,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginRight="15dp"
-        android:background="@android:drawable/btn_star_big_on"
+        android:background="@drawable/btn_check_buttonless_on"
         />
-        <!--
-        android:background="@drawable/btn_check_on"
-        android:background="@android:drawable/btn_star_big_on"
-         -->
 </LinearLayout>
