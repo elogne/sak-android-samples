@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffff0000"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        >
+        <Button
+            android:id="@+id/aaa_reset"
+            android:text="リセット"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/aaa_digit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="7"
+            android:textSize="64sp"
+            android:textColor="#ffffffff"
+            />
+    </RelativeLayout>
+    <sak.samples.dividedlayout.Bbb
+        android:id="@+id/aaa_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+</LinearLayout>
