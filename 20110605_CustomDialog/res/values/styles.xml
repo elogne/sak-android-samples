@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AnimStatusBar" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/status_bar_enter</item>
+        <item name="android:windowExitAnimation">@anim/status_bar_exit</item>
+    </style>
+    <style name="AnimOptionsPanel" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/options_panel_enter</item>
+        <item name="android:windowExitAnimation">@anim/options_panel_exit</item>
+    </style>
+    <style name="AnimSubmenu" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/submenu_enter</item>
+        <item name="android:windowExitAnimation">@anim/submenu_exit</item>
+    </style>
+    <style name="AnimToast" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_exit</item>
+    </style>
+    <style name="AnimWallPaper" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/wallpaper_enter</item>
+        <item name="android:windowExitAnimation">@anim/wallpaper_exit</item>
+    </style>
+    <style name="AnimDialog" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    <style name="AnimInputMethod" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/input_method_enter</item>
+        <item name="android:windowExitAnimation">@anim/input_method_exit</item>
+    </style>
+    <style name="AnimInputMethodFancy" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/input_method_fancy_enter</item>
+        <item name="android:windowExitAnimation">@anim/input_method_fancy_exit</item>
+    </style>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    <style name="Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowTitleStyle">@android:style/DialogWindowTitle</item>
+        <item name="android:windowBackground">@android:drawable/panel_background</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+ -->
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimSubmenu" parent="MyDialog">
+        <item name="android:windowBackground">@drawable/frame</item>
+        <item name="android:windowAnimationStyle">@style/AnimSubmenu</item>
+    </style>
+    <style name="AnimToast" parent="MyDialog">
+        <item name="android:windowBackground">@drawable/frame</item>
+        <item name="android:windowAnimationStyle">@style/AnimToast</item>
+    </style>
+    <style name="AnimWallPaper" parent="MyDialog">
+        <item name="android:windowBackground">@drawable/frame</item>
+        <item name="android:windowAnimationStyle">@style/AnimWallPaper</item>
+    </style>
+    <style name="AnimDialog" parent="MyDialog">
+        <item name="android:windowBackground">@drawable/frame</item>
+        <item name="android:windowAnimationStyle">@style/AnimDialog</item>
+    </style>
+    <style name="AnimInputMethod" parent="MyDialog">
+        <item name="android:windowBackground">@drawable/frame</item>
+        <item name="android:windowAnimationStyle">@style/AnimInputMethod</item>
+    </style>
+    <style name="AnimInputMethodFancy" parent="MyDialog">
+        <item name="android:windowBackground">@drawable/frame</item>
+        <item name="android:windowAnimationStyle">@style/AnimInputMethodFancy</item>
+    </style>
+    <style name="AnimOptionsPanel" parent="MyDialog">
+        <item name="android:windowBackground">@drawable/frame_0</item>
+        <item name="android:windowAnimationStyle">@style/AnimOptionsPanel</item>
+    </style>
+    <style name="AnimStatusBar" parent="MyDialog">
+        <item name="android:windowBackground">@drawable/frame_0</item>
+        <item name="android:windowAnimationStyle">@style/AnimStatusBar</item>
+    </style>
+</resources>
