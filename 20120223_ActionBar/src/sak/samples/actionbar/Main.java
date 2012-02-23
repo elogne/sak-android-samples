@@ -14,6 +14,8 @@ public class Main extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
+        getActionBar().setTitle("ActionBar");
+        
         MyListFragment f = new MyListFragment();
         
         fm = getFragmentManager();
