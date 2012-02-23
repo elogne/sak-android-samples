@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_one"
+          android:icon="@drawable/ic_action_one"
+          android:title="@string/action_one"
+          android:showAsAction="ifRoom" />
+    <item android:id="@+id/action_two"
+          android:icon="@drawable/ic_action_two"
+          android:title="@string/action_two"
+          android:showAsAction="ifRoom" />
+    <item android:id="@+id/action_three"
+          android:icon="@drawable/ic_action_three"
+          android:title="@string/action_three"
+          android:showAsAction="ifRoom" />
+    <item android:id="@+id/action_four"
+          android:icon="@drawable/ic_action_four"
+          android:title="@string/action_four"
+          android:showAsAction="ifRoom" />
+    <item android:id="@+id/action_five"
+          android:icon="@drawable/ic_action_five"
+          android:title="@string/action_five"
+          android:showAsAction="ifRoom" />
+</menu>

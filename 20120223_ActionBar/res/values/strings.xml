@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ActionBar03</string>
+
+    <string name="action_one">いち</string>
+    <string name="action_two">にい</string>
+    <string name="action_three">さん</string>
+    <string name="action_four">よん</string>
+    <string name="action_five">ごー</string>
+    <string name="action_six">ろく</string>
+    <string name="action_seven">なな</string>
+    <string name="action_eight">はち</string>
+    <string name="action_nine">きゅう</string>
+    <string name="action_zero">ぜろ</string>
+</resources>
